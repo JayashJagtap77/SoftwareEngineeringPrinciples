@@ -44,6 +44,7 @@ public class Calculator1 {
 			case 2 : return new SubtractOperator();
 			case 3 : return new MultiplyOperator();
 			case 4 : return new DivideOperator();
+			case 6 : return new SquareOperator(); // Assuming square operator is added to the menu
 			case 5 : System.out.println("Exiting program..."); break;
 			default : System.out.println("Invalid choice, please try again.");
 		}

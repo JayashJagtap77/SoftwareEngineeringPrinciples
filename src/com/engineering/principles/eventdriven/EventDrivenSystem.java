@@ -16,10 +16,12 @@ public class EventDrivenSystem {
         Event userEvent = new UserEvent("USER_CREATED", "Prince Babu");
         dispatcher.dispatchEvent(userEvent);
 
-        System.out.println("\n--- Removing Listener B ---");
-        dispatcher.removeListener(orderEventListener);
+        System.out.println("\n--- Removing User Listener ---");
+        dispatcher.removeListener(userEventListener);
 
         Event event2 = new OrderEvent("ORDER_PLACED", "Order #12345");
         dispatcher.dispatchEvent(event2);
     }
 }
+
+
